@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">    
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt Mogan</title>
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="./resources/CSS/style.css">
+  <script id="portfolioScript" src ="./script.js" defer></script>
+</head> 
+
+
+    <!-- body should flip between display FLEX (LAPTOP) and display BLOCK (MOBILE)-->
+    <body>
+        
+        <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
+        <header class="Masthead">
+            <h1>Matt Mogan</h1>
+            <h2>Full Stack Engineer</h2>
+            <p>I build and design engaging, technical, and creative web applications<p>
+            <nav>
+                <ul>
+                    <li href="#About">About</li>
+                    <li href="#Experience">Experience</li>
+                    <li href="#Projects">Projects</li>
+                    <li href="#Contact">Contact Matt</li>
+                </ul>
+            </nav>
+            <div class="Socials">
+                <a href="" class="GitHub"></a>
+                <a href="" class="LinkedIn"></a>
+                <a href="" class="Instagram"></a>
+                <a href="" class="Strava"></a>    
+            </div>
+        </header>
+        
+        <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
+        <main>
+            
+            <section id="About">
+                
+                <h3>About</h3>
+                
+                <!--About Containers (all container classes) should be 8 column grids, such that the Project elements line up neatly with the Experience elements -->
+
+                <div class="About Container">
+                    <p>From tinkering with legos as a kid in Seattle, to designing and deploying browser games and commercial web apps, I've always loved building and creating new things</p>
+                    <br>
+                    <p>My main focus today is web development for friends and family, and working as a senior programme manager at <a href="https://deliveroo.co.uk/">Deliveroo</a> in London</p>
+                    <br>
+                    <p>When I'm not designing or coding, I enjoy tennis, triatholons, and <span class="orca">whale watching</span> in the Pacific Northwest. </p>
+                </div>
+
+            </section>
+            
+            <section id="Experience">
+                
+                <h3>Experience</h3>
+                
+                <div class="Experience Container">
+                    <span class="Timeframe">Feb 2022 - Present</span>
+                    <h4 class="Company">Full Stack Developer, <a href="#">Freelance</a></h4>
+                    <p>Engineer building websites and web applications for businesses and artists</p>
+                    <div class="Technical Tools">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>Go</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="Experience Container">
+                    <span class="Timeframe">Feb 2022 - Present</span>
+                    <h4 class="Job and Title">Senior Programme Manager, <a href="https://deliveroo.co.uk/">Deliveroo</a></h4>
+                    <p>Core member of 4-person leadership team reporting to Commercial Director of SMB group (small / medium sized restaurants). Partnered with SMB function heads to deliver key strategic initiatives, drive adoption, and report on impact. Led 15+ strategy and operations projects across the full SMB team (>100 sales, account management, and customer care professionals)</p>
+                    <div class="Technical Tools">
+                        <span>Looker</span>
+                        <span>Google Cloud Suite</span>
+                    </div>
+                </div>
+
+                <!-- This should open a page to my PDF Resume -->
+                <span class="Section Footer">View my Resume</span>
+
+            </section>
+            
+            <section id="Projects">
+                
+                <h3>Projects</h3>
+
+                <div class="Project Container">
+                    <img src="#" alt="An economic data guessing game"></img>
+                    <h4 class="Project Title "><a href="https://matthewmogan.github.io/Jobble/">Jobble></a></h4>
+                    <p>Guessing game inspired by OECD Tradle. Players guess the country based on it's employment data, and can request a hint</p>
+                    <div class="Technical Tools">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                        <span>Go</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="Contact">
+
+                <h3>Contact Matt</h3>
+
+                <div class="Contact Container"></div>
+                <!-- I'm not sure exactly what this looks like, but should be a contact box -->
+
+            </section>
+        
+        </main>
+
+    </body>
+
+</html>
