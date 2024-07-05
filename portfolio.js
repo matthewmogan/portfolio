@@ -1,40 +1,39 @@
-document.addEventListener('wheel', function(event) {
-    event.preventDefault();
-}, { passive: false });
+let mainContent = document.querySelector('.mainContent');
 
-// // Disable touch scrolling
-// document.addEventListener('touchmove', function(event) {
-//     event.preventDefault();
-// }, { passive: false });
-
-// Disable keydown scrolling (arrow keys, spacebar, etc.)
-document.addEventListener('keydown', function(event) {
-    // Check for the keys that can scroll the page
-    const keys = [32, 33, 34, 35, 36, 37, 38, 39, 40];
-    if (keys.includes(event.keyCode)) {
-        event.preventDefault();
-    }
-});
-
-
-// Code to force the scroll input into the mainContent flexbox
-document.addEventListener('DOMContentLoaded', function() {
-    const mainContent = document.querySelector('.mainContent');
-
-    document.addEventListener('wheel', function(event) {
+function preventDefaultScroll(event){
+    event.preventDefault()
+}
+function enableFlexScroll(event){
+    mainContent.scrollTop += event.deltaY;
     
-        mainContent.scrollTop += event.deltaY;
-    });
-});
+}
 
-// function checkScreenWidth() {
-//     if (window.innerWidth <= 800) { // Adjust the width as needed
-//         enableScrolling();
-//     } else {
-//         disableScrolling();
-//     }
-// }
+function disableScrolling(){    
+    
+    document.addEventListener('wheel', preventDefaultScroll, { passive: false });
+    
+    document.addEventListener('wheel', enableFlexScroll);
 
+}
+
+function enableScrolling(){
+    document.removeEventListener('wheel', preventDefaultScroll, { passive: false });
+    document.removeEventListener('wheel', enableFlexScroll);    
+}
+
+function checkScreenWidth() {
+    if (window.innerWidth <= 1080) { // Adjust the width as needed
+        enableScrolling();
+        console.log("enable")
+    } else {
+        disableScrolling();
+        console.log("disable")
+    }
+}
+
+checkScreenWidth()
+
+window.addEventListener('resize',checkScreenWidth)
 
 
 

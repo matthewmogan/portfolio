@@ -24,6 +24,10 @@ p{
     font-weight: 200;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Two main portfolio page sections  */
 
 body{
@@ -35,11 +39,19 @@ body{
   padding-right: 6rem;
   margin-left: auto;
   margin-right: auto;
+  /* Hide scrollbar for IE, Edge */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none; 
 }
 
 .masthead{
     padding-top: 6rem;
-    flex: 1; 
+    padding-left:.5rem;
+    padding-right:.5rem;
+    margin-left:.5rem;
+    margin-right: .5rem;
+    flex: .75; 
     /* ^ controls sizing and spacing in parent */
     display:flex;
     flex-direction: column
@@ -47,13 +59,16 @@ body{
 
 .mainContent{
     padding-bottom: 6rem;
+    padding-left:.5rem;
+    padding-right:.5rem;
+    margin-left:.5rem;
+    margin-right: .5rem;
     flex: 1;
     /* ^ controls sizing and spacing in parent */
     overflow-y: auto;
-
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1080px) {
     body {
       display: flex;
     }
@@ -95,7 +110,7 @@ nav a {
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1080px) {
     nav {
       display: block;
     }
@@ -103,6 +118,20 @@ nav a {
 
 
 /* Main components */
+
+.experienceContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.technicalTools span{
+    background-color:rgba(0, 206, 209, 0.348);
+    color: rgb(0, 206, 209);
+    border-radius: 1rem;
+    font-size: .8rem;
+    padding-left:10px;
+    padding-right:10px;
+}
 
 
 /* Scratch section, delete later */
