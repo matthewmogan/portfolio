@@ -1,3 +1,5 @@
+// Force scroll (wheel) event into mainContent flex child when in full screen mode
+
 let mainContent = document.querySelector('.mainContent');
 
 function preventDefaultScroll(event){
@@ -5,15 +7,11 @@ function preventDefaultScroll(event){
 }
 function enableFlexScroll(event){
     mainContent.scrollTop += event.deltaY;
-    
 }
 
 function disableScrolling(){    
-    
     document.addEventListener('wheel', preventDefaultScroll, { passive: false });
-    
     document.addEventListener('wheel', enableFlexScroll);
-
 }
 
 function enableScrolling(){
@@ -32,8 +30,22 @@ function checkScreenWidth() {
 }
 
 checkScreenWidth()
-
 window.addEventListener('resize',checkScreenWidth)
+
+// ----- SMOOTH NAVIGATION TO PORTFOLIO SECTIONS WHEN IN FULL SCREEN MODE ----- //
+
+// const root = document.documentElement;
+// // Get the computed font size of the root element
+// const rem = window.getComputedStyle(root).getPropertyValue('font-size');
+// console.log(rem)   
+
+// function offsetScroll(event, sectionId) {
+//     event.preventDefault();
+//     const yOffset = -parseInt(rem)*6; // Adjust this value to the desired offset on nav bar click
+//     const element = document.getElementById(sectionId);
+//     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+//     window.scrollTo({top: y, behavior: 'smooth'});
+// }
 
 
 
