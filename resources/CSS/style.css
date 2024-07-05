@@ -1,0 +1,115 @@
+/* Universal stylings */
+* {
+    box-sizing: border-box; 
+    font-family: "Noto Sans", sans-serif;
+    color:rgb(255, 255, 255)
+}
+
+html{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0px;
+}
+
+h2{
+    margin-top: 1rem;
+    font-weight: 200;
+}
+
+p{
+    color:rgba(255, 255, 255, 0.724);
+    font-weight: 200;
+}
+
+/* Two main portfolio page sections  */
+
+body{
+  background-color: rgb(20, 22, 47);
+  display: block;
+  max-width: 1280px;
+  height:100vh;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.masthead{
+    padding-top: 6rem;
+    flex: 1; 
+    /* ^ controls sizing and spacing in parent */
+    display:flex;
+    flex-direction: column
+}
+
+.mainContent{
+    padding-bottom: 6rem;
+    flex: 1;
+    /* ^ controls sizing and spacing in parent */
+    overflow-y: auto;
+
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+      display: flex;
+    }
+    .masthead{
+        padding-bottom: 6rem;
+    }
+    .mainContent{
+        padding-top: 6rem;
+        max-height: 100vh;
+    }
+  }
+
+
+/* Masthead components */
+
+.mastheadTagLine {
+    width: 300px;
+}
+
+nav{
+    display: none;
+    height: fit-content;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: .75rem;
+    color:rgba(255, 255, 255, 0.724);
+}
+
+
+@media only screen and (min-width: 800px) {
+    nav {
+      display: block;
+    }
+  }
+
+
+/* Main components */
+
+
+/* Scratch section, delete later */
+
+/* .noto-sans-main {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  } */

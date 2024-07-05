@@ -2,12 +2,15 @@
 <html lang="en-GB">    
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matt Mogan</title>
-  <!-- CSS Style Sheets -->
-  <link rel="stylesheet" href="./resources/CSS/style.css">
-  <script id="portfolioScript" src ="./script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Mogan</title>
+    <!-- CSS Style Sheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/CSS/style.css">
+    <script id="portfolioScript" src ="./portfolio.js" defer></script>
 </head> 
 
 
@@ -15,19 +18,19 @@
     <body>
         
         <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
-        <header class="Masthead">
+        <header class="masthead">
             <h1>Matt Mogan</h1>
             <h2>Full Stack Engineer</h2>
-            <p>I build and design engaging, technical, and creative web applications<p>
+            <p class="mastheadTagLine">I design and build engaging and creative web applications<p>
             <nav>
                 <ul>
-                    <li href="#About">About</li>
-                    <li href="#Experience">Experience</li>
-                    <li href="#Projects">Projects</li>
-                    <li href="#Contact">Contact Matt</li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="Socials">
+            <div class="socials">
                 <a href="" class="GitHub"></a>
                 <a href="" class="LinkedIn"></a>
                 <a href="" class="Instagram"></a>
@@ -36,33 +39,31 @@
         </header>
         
         <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
-        <main>
+        <div class="mainContent">
             
-            <section id="About">
+            <section id="about">
                 
                 <h3>About</h3>
                 
                 <!--About Containers (all container classes) should be 8 column grids, such that the Project elements line up neatly with the Experience elements -->
 
-                <div class="About Container">
+                <div class="aboutContainer hoverEffect">
                     <p>From tinkering with legos as a kid in Seattle, to designing and deploying browser games and commercial web apps, I've always loved building and creating new things</p>
-                    <br>
                     <p>My main focus today is web development for friends and family, and working as a senior programme manager at <a href="https://deliveroo.co.uk/">Deliveroo</a> in London</p>
-                    <br>
                     <p>When I'm not designing or coding, I enjoy tennis, triatholons, and <span class="orca">whale watching</span> in the Pacific Northwest. </p>
                 </div>
 
             </section>
-            
-            <section id="Experience">
+            <hr>
+            <section id="experience">
                 
                 <h3>Experience</h3>
                 
-                <div class="Experience Container">
-                    <span class="Timeframe">Feb 2022 - Present</span>
-                    <h4 class="Company">Full Stack Developer, <a href="#">Freelance</a></h4>
+                <div class="experienceContainer hoverEffect">
+                    <span class="timeframe">Feb 2022 - Present</span>
+                   <h4 class="company">Full Stack Developer, <a href="#">Freelance</a></h4>
                     <p>Engineer building websites and web applications for businesses and artists</p>
-                    <div class="Technical Tools">
+                    <div class="technicalTools">
                         <span>JavaScript</span>
                         <span>HTML</span>
                         <span>CSS</span>
@@ -73,30 +74,30 @@
                     </div>
                 </div>
 
-                <div class="Experience Container">
-                    <span class="Timeframe">Feb 2022 - Present</span>
-                    <h4 class="Job and Title">Senior Programme Manager, <a href="https://deliveroo.co.uk/">Deliveroo</a></h4>
+                <div class="experienceContainer hoverEffect">
+                    <span class="timeframe">Feb 2022 - Present</span>
+                    <h4 class="jobAndTitle">Senior Programme Manager, <a href="https://deliveroo.co.uk/">Deliveroo</a></h4>
                     <p>Core member of 4-person leadership team reporting to Commercial Director of SMB group (small / medium sized restaurants). Partnered with SMB function heads to deliver key strategic initiatives, drive adoption, and report on impact. Led 15+ strategy and operations projects across the full SMB team (>100 sales, account management, and customer care professionals)</p>
-                    <div class="Technical Tools">
+                    <div class="technicalTools">
                         <span>Looker</span>
                         <span>Google Cloud Suite</span>
                     </div>
                 </div>
 
                 <!-- This should open a page to my PDF Resume -->
-                <span class="Section Footer">View my Resume</span>
+                <span class="sectionFooter">View my Resume</span>
 
             </section>
-            
-            <section id="Projects">
+            <hr>
+            <section id="projects">
                 
                 <h3>Projects</h3>
 
-                <div class="Project Container">
+                <div class="projectContainer hoverEffect">
                     <img src="#" alt="An economic data guessing game"></img>
-                    <h4 class="Project Title "><a href="https://matthewmogan.github.io/Jobble/">Jobble></a></h4>
+                    <h4 class="projectTitle "><a href="https://matthewmogan.github.io/Jobble/">Jobble></a></h4>
                     <p>Guessing game inspired by OECD Tradle. Players guess the country based on it's employment data, and can request a hint</p>
-                    <div class="Technical Tools">
+                    <div class="technicalTools">
                         <span>JavaScript</span>
                         <span>HTML</span>
                         <span>CSS</span>
@@ -106,17 +107,17 @@
                 </div>
 
             </section>
-
+            <hr>
             <section id="Contact">
 
                 <h3>Contact Matt</h3>
 
-                <div class="Contact Container"></div>
+                <div class="contactContainer hoverEffect"></div>
                 <!-- I'm not sure exactly what this looks like, but should be a contact box -->
 
             </section>
         
-        </main>
+        </div>
 
     </body>
 
