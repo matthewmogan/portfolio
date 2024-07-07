@@ -20,13 +20,33 @@ h2{
     font-weight: 200;
 }
 
+h3{
+    font-size: 1.25rem;
+    margin-top: 3rem;
+}
+
+h3:first-of-type{
+    margin-top: 1rem;
+}
+
+h4{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 p{
     color:rgba(255, 255, 255, 0.724);
     font-weight: 200;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 a{
     text-decoration: none;
+}
+
+hr{
+    
 }
 
 ::-webkit-scrollbar {
@@ -112,9 +132,14 @@ nav a {
 
 /* Main components */
 
-.experienceContainer{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.contentContainer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: max-content;
+}
+
+.timeframe{
+    color:rgba(255, 255, 255, 0.724);
 }
 
 .technicalTools span{
@@ -126,11 +151,25 @@ nav a {
     padding-right:10px;
 }
 
+.projectContainer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projectImage {
+    display: block;
+    height: 16rem;
+    width: auto;
+    margin: 2rem auto;
+    border: 1px solid rgb(255, 255, 255) 
+}
+
+
 /* Media Queries */
 
 /* Medium screens */
 
-@media only screen and (min-width: 525px) {
+@media only screen and (min-width: 650px) {
    
     body {
         padding-left: 6rem;
@@ -140,6 +179,25 @@ nav a {
     .masthead{
         padding-top: 6rem;
     }
+
+    .projectContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .projectImage {
+        height: 7rem;
+        width: auto;
+        margin: 1rem 1rem;
+        margin-left: 0;
+        border: 1px solid rgb(255, 255, 255) 
+    }
+
+    .projectTitle {
+        margin: 0 0;
+    }
+
 }
 
 /* Large Screens */
@@ -166,9 +224,8 @@ nav a {
     .socials{
         margin-top: auto;
     }
-    
-  }
 
+  }
 
 
 
