@@ -26,7 +26,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#experience" onclick="offsetScroll(event, 'experience')">EXPERIENCE</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <!-- <li><a href="#contact">CONTACT</a></li> -->
                 </ul>
@@ -68,7 +68,7 @@
                 <h3>Experience</h3>
                 
                 <div class="contentContainer hoverEffect">
-                   <h4 class="company">Full Stack Developer, <a href="https://www.linkedin.com/in/matthewmogan/">Freelance</a></h4>
+                   <h4 class="company">Full Stack Engineer, <a href="https://www.linkedin.com/in/matthewmogan/">Freelance</a></h4>
                    <span class="timeframe">July 2022 - Present</span>
                     <p>Developing websties and applications for clients based in UK, EU and U.S. Profficient languages listed below</p>
                     <div class="technicalTools">
@@ -142,13 +142,3 @@
     </body>
 
 </html>
-
-<script>
-    function offsetScroll(event, sectionId) {
-        event.preventDefault();
-        const yOffset = -120; // Adjust this value to the desired offset
-        const element = document.getElementById(sectionId);
-        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({top: y, behavior: 'smooth'});
-    }
-</script>
