@@ -200,7 +200,9 @@ nav a {
     .projectImage {
         height: 7rem;
         width: auto;
-        margin: 1rem 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 1rem;
         margin-left: 0;
         border: 1px solid rgb(255, 255, 255) 
     }
