@@ -22,11 +22,8 @@ h2{
 
 h3{
     font-size: 1.25rem;
-    margin-top: 3rem;
-}
-
-h3:first-of-type{
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h4{
@@ -70,6 +67,7 @@ body{
     padding-top: 3rem;
     padding-left:.5rem;
     padding-right:.5rem;
+    padding-bottom: 1rem;
     margin-left:.5rem;
     margin-right: .5rem;
     flex: .75; 
@@ -236,6 +234,10 @@ nav a {
     
     .socials{
         margin-top: auto;
+    }
+
+    hr:first-of-type{
+        display: none;
     }
 
   }

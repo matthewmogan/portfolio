@@ -26,7 +26,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#experience" onclick="offsetScroll(event, 'experience')">EXPERIENCE</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <!-- <li><a href="#contact">CONTACT</a></li> -->
                 </ul>
@@ -49,7 +49,7 @@
         
         <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
         <div class="mainContent">
-            
+            <hr>
             <section id="about">
                 
                 <h3>About</h3>
@@ -133,7 +133,6 @@
             <!-- <section id="contact">
 
                 <h3>Contact Matt</h3>
-
                 <div class="contentContainer hoverEffect"></div>
 
             </section> -->
@@ -143,3 +142,13 @@
     </body>
 
 </html>
+
+<script>
+    function offsetScroll(event, sectionId) {
+        event.preventDefault();
+        const yOffset = -120; // Adjust this value to the desired offset
+        const element = document.getElementById(sectionId);
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({top: y, behavior: 'smooth'});
+    }
+</script>
