@@ -45,10 +45,6 @@ a{
     text-decoration: none;
 }
 
-hr{
-    
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -116,7 +112,6 @@ nav li {
 
 nav li a:hover{
     font-weight: bolder;
-    /* color: rgb(0, 206, 209); */
     color: rgb(255, 255, 255);
 }
 
@@ -161,9 +156,27 @@ nav a {
     height: 16rem;
     width: auto;
     margin: 2rem auto;
-    border: 1px solid rgb(255, 255, 255) 
+    border: 1px solid rgb(255, 255, 255);
 }
 
+#Deliveroo {
+    color:  rgb(0, 206, 209);
+}
+
+#Deliveroo:hover{
+    font-weight: bolder;
+}
+
+#resume{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 206, 209);
+}
+
+#resume:hover{
+    font-weight: bolder;
+}
 
 /* Media Queries */
 
@@ -226,14 +239,3 @@ nav a {
     }
 
   }
-
-
-
-/* Scratch section, delete later */
-
-/* .noto-sans-main {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  } */
