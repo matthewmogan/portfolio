@@ -149,8 +149,8 @@ nav a {
 
 .projectImage {
     display: block;
-    height: 16rem;
-    width: auto;
+    max-height: 16rem;
+    max-width: 17.5rem;
     margin: 2rem auto;
     border: 1px solid rgb(255, 255, 255);
 }
@@ -176,7 +176,9 @@ nav a {
 
 /* Media Queries */
 
-/* Medium screens */
+/* Base formatting above are for Small screens (mobile) */
+
+/* Medium screens (tablet) */
 
 @media only screen and (min-width: 650px) {
    
@@ -213,7 +215,7 @@ nav a {
 
 }
 
-/* Large Screens */
+/* Large screens (laptop */
 
 @media only screen and (min-width: 1080px) {
    
