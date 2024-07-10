@@ -235,10 +235,6 @@ nav a {
         overflow-y: auto; 
         overflow: auto; 
     }
-    
-    #projects{
-        height: 45rem;
-    }
 
     nav {
         display: block;
@@ -250,6 +246,10 @@ nav a {
 
     hr:first-of-type{
         display: none;
+    }
+
+    .projectContainer:last-of-type{
+        margin-bottom: 0;
     }
 
   }
