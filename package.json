@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Matt Mogan Full Stack Developer Portfolio Page",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Matt Mogan",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.6.0"
+  }
+}

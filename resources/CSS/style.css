@@ -1,4 +1,3 @@
-/* Universal stylings */
 * {
     box-sizing: border-box; 
     font-family: "Noto Sans", sans-serif;
@@ -28,6 +27,7 @@ h3{
 h4{
     margin-top: .5rem;
     margin-bottom: .5rem;
+    font-weight: 400;
 }
 
 p{
@@ -68,7 +68,7 @@ body{
     padding-bottom: 1rem;
     margin-left:.5rem;
     margin-right: .5rem;
-    flex: .75; 
+    flex: .5; 
     /* ^ controls sizing and spacing in parent */
     display:flex;
     flex-direction: column
@@ -80,7 +80,7 @@ body{
     padding-right:.5rem;
     margin-left:.5rem;
     margin-right: .5rem;
-    flex: 1;
+    flex: 1.5;
     /* ^ controls sizing and spacing in parent */
     scroll-behavior: smooth;
 }
@@ -155,12 +155,13 @@ nav a {
     border: 1px solid rgb(255, 255, 255);
 }
 
-#Deliveroo {
+.link {
     color:  rgb(0, 206, 209);
+    transition: color .25s ease
 }
 
-#Deliveroo:hover{
-    font-weight: bolder;
+.link:hover{
+    color: rgb(255, 255, 255);
 }
 
 #resume{
@@ -168,11 +169,12 @@ nav a {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: rgb(0, 206, 209);
+    transition: color .25s ease
 }
 
 #resume:hover{
-    font-weight: bolder;
-}
+    color: rgb(255, 255, 255);
+} 
 
 /* Media Queries */
 

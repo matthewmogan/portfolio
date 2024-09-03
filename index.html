@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Mogan</title>
     <link rel="icon" href="./resources/images/mattMoganIcon.png" type="image/png">
-    <!-- CSS Style Sheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
@@ -14,21 +13,18 @@
     <script id="portfolioScript" src ="./portfolio.js" defer></script>
 </head> 
 
-
-    <!-- body should flip between display FLEX (LAPTOP) and display BLOCK (MOBILE)-->
+    <!-- body flips between display FLEX (LAPTOP) and display BLOCK (MOBILE)-->
     <body>
         
-        <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
         <header class="masthead">
             <h1>Matt Mogan</h1>
-            <h2>Full Stack Engineer</h2>
+            <h2>Full Stack Developer</h2>
             <p class="mastheadTagLine">I design and build engaging and creative web applications<p>
             <nav>
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#experience">EXPERIENCE </a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <!-- <li><a href="#contact">CONTACT</a></li> -->
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
                 </ul>
             </nav>
             <div class="socials">
@@ -38,27 +34,18 @@
                 <a href="https://www.linkedin.com/in/matthewmogan/" class="LinkedIn">
                     <img class="svg-container" src="./resources/images/linkedin-svgrepo-com.svg" alt="LinkedIn"></img>
                 </a>
-                <a href="https://www.instagram.com/mtmogan/" class="Instagram">
-                    <img class="svg-container" src="./resources/images/instagram-svgrepo-com.svg" alt="Instagram"></img>
-                </a>
-                <a href="https://www.strava.com/athletes/74597532" class="Strava">
-                    <img class="svg-container" src="./resources/images/strava-svgrepo-com.svg" alt="Strava"></img>
-                </a>    
             </div>
         </header>
         
-        <!-- This will take up 1/2 of the screen when in LAPTOP layout, and fix to the top when in MOBILE layout  -->
         <div class="mainContent">
             <hr>
             <section id="about">
                 
                 <h3>About</h3>
-                
-                <!--About Containers (all container classes) should be 8 column grids, such that the Project elements line up neatly with the Experience elements -->
 
                 <div class="contentContainer hoverEffect">
-                    <p>Passionate about creation and expression through engineering. Currently working as a senior program manager in the Grocery / Retail / New Verticals space at <a id="Deliveroo" href="https://deliveroo.co.uk/">Deliveroo</a> in London.</p>
-                    <p>My main focus today is web development for SMEs, friends, and family, and developing a number of personal projects.  When I'm not designing or coding, I enjoy tennis, triatholons, and whale watching in the Pacific Northwest. </p>
+                    <p>Passionate about creation and expression through engineering. Currently working as a senior programme manager in the Grocery / Retail space at <a class="link" href="https://deliveroo.co.uk/">Deliveroo</a>, the market leading food delivery application in the UK / EU. I graduated from Brown University with a Bachelor of Science in Applied Mathematics and Economics</p>
+                    <p>I develop web applications both as a hobby and professionally. When I'm not designing and coding, I enjoy playing tennis, running triatholons, and whale watching in the Pacific Northwest </p>
                 </div>
 
             </section>
@@ -68,22 +55,19 @@
                 <h3>Experience</h3>
                 
                 <div class="contentContainer hoverEffect">
-                   <h4 class="company">Full Stack Engineer, <a href="https://www.linkedin.com/in/matthewmogan/">Freelance</a></h4>
+                   <h4><a class="link" href="https://www.linkedin.com/in/matthewmogan/">Full Stack Developer, Freelance</a></h4>
                    <span class="timeframe">July 2022 - Present</span>
-                    <p>Developing websties and applications for clients based in UK, EU and U.S. Profficient languages listed below</p>
+                    <p>Developing websties and applications for clients based in UK. Profficient languages and framewords listed below</p>
                     <div class="technicalTools">
                         <span>JavaScript</span>
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>Node.js</span>
                         <span>React</span>
-                        <span>Go</span>
-                        <span>Python</span>
                     </div>
                 </div>
 
                 <div class="contentContainer hoverEffect">
-                    <h4 class="jobAndTitle">Senior Programme Manager - Grocery, <a href="https://deliveroo.co.uk/">Deliveroo</a></h4>
+                    <h4><a class="link" href="https://deliveroo.co.uk/"> Senior Programme Manager - Grocery, Deliveroo</a></h4>
                     <span class="timeframe">Feb 2022 - Present</span>
                     <p>Programme managed global rollout of Grocery Picking App, which grocery store partners use to scan and complete grocery orders. Increased picking app order volume share from 20% to 80% YoY. Designed automated restricted merchandise removal process in collaboration with machine learning engieering team. Trained GPT model on positive ID restricitons, significantly increasing scale of reviews and replacing manual review process </p>
                     <div class="technicalTools">
@@ -93,9 +77,9 @@
                 </div>
 
                 <div class="contentContainer hoverEffect">
-                    <h4 class="jobAndTitle">Engagement Manager, <a href="https://www.ey.com/en_uk">EY-Parthenon</a></h4>
+                    <h4 class="jobAndTitle"><a class="link" href="https://www.ey.com/en_uk">Engagement Manager, EY-Parthenon</a></h4>
                     <span class="timeframe">Apr 2015 - Jan 2022</span>
-                    <p>Directed engagements on 30+ investment due diligence / strategy projects, for clients in both Europe and the US. Managed up to 2 teams of 4-6 consultants each, across multiple time zones. Specialised in technology and telecommunications verticals, with an emphasis on cloud infrastructure.
+                    <p>Directed engagements on 30+ investment due diligence / strategy projects, for clients in both Europe and the US. Managed up to 2 teams of 4-6 consultants each, across multiple time zones. Specialised in technology and telecommunications verticals, with an emphasis on cloud infrastructure
                     </p>
                     <div class="technicalTools">
                         <span>VisualBasic</span>
@@ -104,36 +88,34 @@
                     </div>
                 </div>
 
-                <!-- This should open a page to my PDF Resume -->
-                <a id="resume" href="./resources/images/Matthew Mogan CV.pdf" target="_blank">Download my resume → </a>
+                <!-- Open a page to my resume (pdf) -->
+                <a id="resume" class="link" href="./resources/images/Matthew Mogan CV.pdf" target="_blank">Download my resume → </a>
 
             </section>
             <hr>
-            <section id="projects">
+            <section id="portfolio">
                 
-                <h3>Projects</h3>
+                <h3>Portfolio</h3>
 
                 <div class="projectContainer hoverEffect">
                     <div class="projectContents">
-                        <h4 class="projectTitle"><a href="https://matthewmogan.github.io/Jobble/">Jobble (Work in Progress)</a></h4>
-                        <p>Guessing game inspired by OECD Tradle. Players guess the country based on it's employment data, and can request a hint</p>
+                        <h4 class="projectTitle"><a class = "link" href="https://matthewmogan.github.io/wordleflex/">WordleFlex</a></h4>
+                        <p>Wordle clone that allows players to control difficulty by changing the number of guesses per round and the number of letters in the secret word</p>
                         <div class="technicalTools">
                             <span>JavaScript</span>
+                            <span>React</span>
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>SQL</span>
-                            <span>Go</span>
                         </div>
                     </div>
-                    <img class="projectImage" src="./resources/images/Jobble.png" alt="An economic data guessing game"></img>
+                    <img class="projectImage" src="./resources/images/WordleFlex.png" alt="An word guessing game"></img>
                 </div>
 
                 <div class="projectContainer hoverEffect">
                     <div class="projectContents">
-                        <h4 class="projectTitle"><a href="https://matthewmogan.github.io/portfolio/">Matt Mogan Portfolio</a></h4>
+                        <h4 class="projectTitle"><a class="link" href="https://matthewmogan.github.io/wordleflex/">Matt Mogan Portfolio</a></h4>
                         <p>Reactive website highlighting my projects and professional experience</p>
                         <div class="technicalTools">
-                            <span>JavaScript</span>
                             <span>HTML</span>
                             <span>CSS</span>
                         </div>
@@ -142,14 +124,6 @@
                 </div>
 
             </section>
-            
-            <!-- <hr> -->
-            <!-- <section id="contact">
-
-                <h3>Contact Matt</h3>
-                <div class="contentContainer hoverEffect"></div>
-
-            </section> -->
         
         </div>
 
